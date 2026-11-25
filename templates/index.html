@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farias Tomas | Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+  <header class="encabezado">
+    <a class="marca" href="#inicio" aria-label="Ir al inicio">FT</a>
+    <nav aria-label="Navegación principal">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#intereses">Intereses</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-texto">
+        <p class="etiqueta">PORTFOLIO PERSONAL · 2026</p>
+        <h1>Hola, soy <span>Farias Tomas</span>.</h1>
+        <h2>Estudiante de 6.º año con interés en la nutrición deportiva.</h2>
+        <p>Me interesa aprender cómo la alimentación puede acompañar el bienestar, la actividad física y el rendimiento deportivo.</p>
+        <a class="boton" href="#sobre-mi">Conoceme un poco más</a>
+      </div>
+      <img class="avatar foto-perfil" src="{{ url_for('static', filename='foto_perfil.png') }}" alt="Foto de perfil de Farias Tomas">
+      <span class="decoracion decoracion-1"></span>
+      <span class="decoracion decoracion-2"></span>
+    </section>
+
+    <section class="seccion" id="sobre-mi">
+      <p class="etiqueta">01 / SOBRE MÍ</p>
+      <h2>Aprender, crecer y avanzar</h2>
+      <p class="texto-largo">Soy estudiante de 6.º año y actualmente estoy realizando un curso de nutrición como preparación para mi examen de ingreso. Me considero una persona curiosa, responsable y perseverante. Me gusta aprender cosas nuevas, escuchar diferentes ideas y trabajar para alcanzar mis objetivos. Estoy construyendo mi camino hacia el área de la nutrición deportiva, con ganas de seguir formándome y adquirir experiencia.</p>
+    </section>
+
+    <section class="seccion intereses" id="intereses">
+      <p class="etiqueta">02 / MI INTERÉS</p>
+      <h2>Nutrición deportiva</h2>
+      <div class="tarjeta amplia">
+        <div class="icono">✦</div>
+        <div>
+          <h3>Alimentación y deporte</h3>
+          <p>Me interesa conocer cómo se relacionan la alimentación, la actividad física y la recuperación. Mi objetivo es seguir estudiando y, en el futuro, orientar mi formación hacia la nutrición deportiva.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" id="proyectos">
+      <p class="etiqueta">03 / PROYECTOS</p>
+      <h2>Mi recorrido está empezando</h2>
+      <div class="tarjeta">
+        <span class="estado">En construcción</span>
+        <h3>Próximos proyectos</h3>
+        <p>Por ahora no tengo proyectos para presentar. Este espacio queda preparado para sumar trabajos escolares, actividades del curso de nutrición y futuras experiencias.</p>
+        <p class="nota">Cada proyecto incluirá qué hice, qué aprendí y qué me gustaría mejorar.</p>
+      </div>
+    </section>
+
+    <section class="seccion habilidades" id="habilidades">
+      <p class="etiqueta">04 / HABILIDADES Y APRENDIZAJE</p>
+      <h2>Lo que estoy desarrollando</h2>
+      <div class="lista-habilidades">
+        <span>Introducción a la nutrición</span>
+        <span>Preparación para examen de ingreso</span>
+        <span>Curiosidad y aprendizaje continuo</span>
+        <span>Responsabilidad</span>
+        <span>Perseverancia</span>
+        <span>Organización y compromiso</span>
+      </div>
+      <p class="nota">Estas habilidades y conocimientos están en desarrollo; voy a actualizarlos a medida que avance mi formación.</p>
+    </section>
+
+    <section class="seccion contacto" id="contacto">
+      <p class="etiqueta">05 / CONTACTO</p>
+      <h2>¡Hablemos!</h2>
+      <p>Estoy abierto a compartir mi recorrido de aprendizaje y mis futuros proyectos.</p>
+      <a class="boton" href="mailto:ttomasfarias@gmail.com">ttomasfarias@gmail.com</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>Farias Tomas · Portfolio personal</span>
+    <span>Hecho con ganas de aprender 🌿</span>
+  </footer>
+</body>
+</html>
